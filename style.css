@@ -29,6 +29,7 @@ body {
 }
 .line1{
     animation: fadeUp 1s ease forwards;
+    animation-delay: 0.2s;
 }
 .line2{
     opacity: 0;
