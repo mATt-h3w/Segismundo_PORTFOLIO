@@ -52,4 +52,34 @@ body {
 }
 .line3 {
     animation: fadeUp 3s ease-in-out 6s forwards;
-}   
+}
+
+.hint {
+    position: absolute;
+    bottom: 40px;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    color: gray;
+    opacity: 0;
+    animation: fadeUp 4s ease-in-out 8s forwards;
+}
+
+.about {
+    display: none;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.about.show {
+    display: flex;
+    animation: fadeUp 1s ease-in-out forwards;
+}
+
+.intro.hide {
+    display: none;
+}
