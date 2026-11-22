@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
 }
 
@@ -13,13 +13,13 @@ body {
 }
 
 .line1 {
-    font-size: 4rem; font-weight: normal;
+    font-size: 4rem; font-weight: bold;
 }
 .line2 {
-    font-size: 3rem; font-weight: normal;
+    font-size: 3rem; font-weight: bold;
 }
 .line3 {
-    font-size: 2rem; font-weight: normal;
+    font-size: 2rem; font-weight: bold;
 }
 @keyframes showThenHide {
     0% { opacity: 0;   transform: translateY(40px); }
@@ -65,21 +65,77 @@ body {
     animation: fadeUp 4s ease-in-out 8s forwards;
 }
 
-.about {
+.intro.hide {
+    display: none;
+}
+
+.page{
     display: none;
     min-height: 100vh;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
 }
 
-.about.show {
+.page.show {
     display: flex;
     animation: fadeUp 1s ease-in-out forwards;
 }
 
-.intro.hide {
-    display: none;
+.topbar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 30px;
+    border-bottom: 2px solid #000;
+}
+
+.menu-button{
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer; 
+    color: #6b1010;
+}
+
+.pfp{
+    width: 60px;
+    height: 60px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#6b1010
+}
+
+.site-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6b1010;
+}
+
+.layout{
+    display: flex;
+    flex: 1;
+}
+
+.sidebar{
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a{
+    color: #6b1010;
+    text-decoration: none;
+}
+
+.content{
+    flex: 1;
+    padding: 40px;
 }
